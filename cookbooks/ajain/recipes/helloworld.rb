@@ -1,3 +1,3 @@
 log "Hello World" 
 
-package "apach2"
+package "apache2"
