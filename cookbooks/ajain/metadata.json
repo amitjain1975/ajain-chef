@@ -1,0 +1,30 @@
+{
+  "maintainer": "Personal Capital",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "platforms": {
+  },
+  "description": "Installs/Configures ajain",
+  "conflicting": {
+  },
+  "recipes": {
+    "ajain::helloworld": "Prints hello world"
+  },
+  "providing": {
+  },
+  "attributes": {
+  },
+  "replacing": {
+  },
+  "maintainer_email": "amit.jain@personalcapital.com",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "ajain",
+  "suggestions": {
+  },
+  "groupings": {
+  },
+  "dependencies": {
+  },
+  "license": "All rights reserved"
+}
