@@ -1,3 +1,4 @@
 log "Hello World" 
+log "The package that will be installed is #{node['ajain']['apache_package_name']}"
 
-package "apache2"
+package node['ajain']['apache_package_name']

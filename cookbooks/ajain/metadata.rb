@@ -7,3 +7,8 @@ version          "0.0.1"
 
 recipe "ajain::helloworld","Prints hello world"
 
+attribute "ajain/apache_package_name",
+  :display_name => "Apache Package Name",
+  :description => "An override for the apache package name",
+  :default => "apache2",
+  :recipes => ["ajain::helloworld"]

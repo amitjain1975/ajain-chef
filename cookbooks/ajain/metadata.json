@@ -1,30 +1,44 @@
 {
-  "maintainer": "Personal Capital",
-  "version": "0.0.1",
-  "recommendations": {
+  "attributes": {
+    "ajain/apache_package_name": {
+      "default": "apache2",
+      "type": "string",
+      "calculated": false,
+      "required": "optional",
+      "recipes": [
+        "ajain::helloworld"
+      ],
+      "choice": [
+
+      ],
+      "display_name": "Apache Package Name",
+      "description": "An override for the apache package name"
+    }
   },
-  "platforms": {
-  },
-  "description": "Installs/Configures ajain",
+  "name": "ajain",
   "conflicting": {
   },
+  "license": "All rights reserved",
   "recipes": {
     "ajain::helloworld": "Prints hello world"
   },
-  "providing": {
-  },
-  "attributes": {
-  },
-  "replacing": {
-  },
   "maintainer_email": "amit.jain@personalcapital.com",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "name": "ajain",
-  "suggestions": {
+  "version": "0.0.1",
+  "platforms": {
   },
-  "groupings": {
+  "maintainer": "Personal Capital",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "suggestions": {
   },
   "dependencies": {
   },
-  "license": "All rights reserved"
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "description": "Installs/Configures ajain",
+  "replacing": {
+  },
+  "providing": {
+  }
 }
