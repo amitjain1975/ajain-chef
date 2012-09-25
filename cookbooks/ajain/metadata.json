@@ -1,46 +1,59 @@
 {
-  "dependencies": {
-  },
-  "providing": {
-  },
-  "name": "ajain",
   "version": "0.0.1",
-  "maintainer_email": "amit.jain@personalcapital.com",
-  "attributes": {
-    "ajain/apache_package_name": {
-      "calculated": false,
-      "choice": [
-
-      ],
-      "type": "string",
-      "display_name": "Apache Package Name",
-      "required": "optional",
-      "default": "apache2",
-      "recipes": [
-        "ajain::helloworld"
-      ],
-      "description": "An override for the apache package name"
-    }
-  },
-  "replacing": {
-  },
-  "suggestions": {
-  },
-  "platforms": {
-  },
   "license": "All rights reserved",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "conflicting": {
-  },
+  "maintainer": "Personal Capital",
   "recipes": {
     "ajain::create_index": "Put my name",
     "ajain::helloworld": "Prints hello world",
     "ajain::install_foo": "Moves foo.txt to a directory"
   },
-  "maintainer": "Personal Capital",
-  "description": "Installs/Configures ajain",
   "groupings": {
   },
+  "providing": {
+  },
+  "platforms": {
+  },
+  "maintainer_email": "amit.jain@personalcapital.com",
+  "name": "ajain",
+  "suggestions": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "ajain/apache_package_name": {
+      "required": "optional",
+      "recipes": [
+        "ajain::helloworld"
+      ],
+      "type": "string",
+      "description": "An override for the apache package name",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "apache2",
+      "display_name": "Apache Package Name"
+    },
+    "ajain/my_name": {
+      "required": "required",
+      "recipes": [
+        "ajain::change_index"
+      ],
+      "type": "string",
+      "description": "My name for the index.html file",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "display_name": "My name"
+    }
+  },
+  "conflicting": {
+  },
   "recommendations": {
-  }
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "dependencies": {
+  },
+  "description": "Installs/Configures ajain"
 }

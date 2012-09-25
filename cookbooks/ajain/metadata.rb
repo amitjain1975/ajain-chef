@@ -14,3 +14,8 @@ attribute "ajain/apache_package_name",
   :description => "An override for the apache package name",
   :default => "apache2",
   :recipes => ["ajain::helloworld"]
+attribute "ajain/my_name",
+  :display_name => "My name",
+  :description => "My name for the index.html file",
+  :required => "required",
+  :recipes => ["ajain::change_index"]
