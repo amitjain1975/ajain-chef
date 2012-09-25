@@ -7,6 +7,7 @@ version          "0.0.1"
 
 recipe "ajain::helloworld","Prints hello world"
 recipe "ajain::install_foo","Moves foo.txt to a directory"
+recipe "ajain::create_index","Put my name"
 
 attribute "ajain/apache_package_name",
   :display_name => "Apache Package Name",
