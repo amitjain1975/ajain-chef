@@ -1,45 +1,45 @@
 {
-  "version": "0.0.1",
+  "recommendations": {
+  },
+  "maintainer": "Personal Capital",
+  "name": "ajain",
+  "groupings": {
+  },
+  "suggestions": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "attributes": {
     "ajain/apache_package_name": {
+      "display_name": "Apache Package Name",
       "choice": [
 
       ],
       "type": "string",
-      "display_name": "Apache Package Name",
       "description": "An override for the apache package name",
       "calculated": false,
+      "required": "optional",
       "default": "apache2",
       "recipes": [
         "ajain::helloworld"
-      ],
-      "required": "optional"
+      ]
     }
   },
+  "description": "Installs/Configures ajain",
   "dependencies": {
   },
-  "groupings": {
-  },
+  "version": "0.0.1",
   "replacing": {
   },
   "providing": {
   },
-  "recommendations": {
-  },
-  "name": "ajain",
-  "description": "Installs/Configures ajain",
+  "license": "All rights reserved",
   "recipes": {
     "ajain::install_foo": "Moves foo.txt to a directory",
     "ajain::helloworld": "Prints hello world"
   },
   "conflicting": {
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "platforms": {
   },
-  "maintainer_email": "amit.jain@personalcapital.com",
-  "suggestions": {
-  },
-  "license": "All rights reserved",
-  "maintainer": "Personal Capital"
+  "maintainer_email": "amit.jain@personalcapital.com"
 }
