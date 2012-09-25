@@ -6,6 +6,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.1"
 
 recipe "ajain::helloworld","Prints hello world"
+recipe "ajain::install_foo","Moves foo.txt to a directory"
 
 attribute "ajain/apache_package_name",
   :display_name => "Apache Package Name",

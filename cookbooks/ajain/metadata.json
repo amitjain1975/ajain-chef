@@ -1,44 +1,45 @@
 {
+  "version": "0.0.1",
   "attributes": {
     "ajain/apache_package_name": {
-      "default": "apache2",
-      "type": "string",
-      "calculated": false,
-      "required": "optional",
-      "recipes": [
-        "ajain::helloworld"
-      ],
       "choice": [
 
       ],
+      "type": "string",
       "display_name": "Apache Package Name",
-      "description": "An override for the apache package name"
+      "description": "An override for the apache package name",
+      "calculated": false,
+      "default": "apache2",
+      "recipes": [
+        "ajain::helloworld"
+      ],
+      "required": "optional"
     }
-  },
-  "name": "ajain",
-  "conflicting": {
-  },
-  "license": "All rights reserved",
-  "recipes": {
-    "ajain::helloworld": "Prints hello world"
-  },
-  "maintainer_email": "amit.jain@personalcapital.com",
-  "version": "0.0.1",
-  "platforms": {
-  },
-  "maintainer": "Personal Capital",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "suggestions": {
   },
   "dependencies": {
   },
   "groupings": {
   },
-  "recommendations": {
-  },
-  "description": "Installs/Configures ajain",
   "replacing": {
   },
   "providing": {
-  }
+  },
+  "recommendations": {
+  },
+  "name": "ajain",
+  "description": "Installs/Configures ajain",
+  "recipes": {
+    "ajain::install_foo": "Moves foo.txt to a directory",
+    "ajain::helloworld": "Prints hello world"
+  },
+  "conflicting": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "platforms": {
+  },
+  "maintainer_email": "amit.jain@personalcapital.com",
+  "suggestions": {
+  },
+  "license": "All rights reserved",
+  "maintainer": "Personal Capital"
 }
