@@ -27,6 +27,17 @@ socket          = <%= node[:db][:socket] %>
 nice            = 0
 
 [mysqld]
+#Change done by Personal Capital
+log_warnings=0
+expire_logs_days=7
+lower_case_table_names=1
+old_passwords=1
+binlog_format = MIXED
+query_cache_size= 0
+query_cache_type = OFF
+innodb_log_file_size = 2047M
+innodb_log_files_in_group = 2
+#Change end done by Personal Capital
 #
 # * Basic Settings
 #
@@ -64,8 +75,8 @@ net_buffer_length       = <%= node[:db_mysql][:tunable][:net_buffer_length] %>
 #
 # * Query Cache Configuration
 #
-query_cache_limit       = 1M
-query_cache_size        = <%= node[:db_mysql][:tunable][:query_cache_size] %>
+#Commented by PC  query_cache_limit       = 1M
+#Commented by PC  query_cache_size        = <%= node[:db_mysql][:tunable][:query_cache_size] %>
 
 #
 # * Logging and Replication
@@ -74,7 +85,7 @@ query_cache_size        = <%= node[:db_mysql][:tunable][:query_cache_size] %>
 <%= node[:db_mysql][:log_error] %>
 <%= node[:db_mysql][:tunable][:log_slow_queries] %>
 <%= node[:db_mysql][:tunable][:long_query_time] %>
-log-queries-not-using-indexes
+#Commented by PC  log-queries-not-using-indexes
 
 <%= "read_only = 1" unless node[:db_mysql][:tunable][:read_only] == nil %>
 server-id               = <%= @server_id %>
@@ -99,7 +110,7 @@ innodb_log_group_home_dir = /var/lib/mysql
 innodb_file_per_table
 innodb_buffer_pool_size = <%= node[:db_mysql][:tunable][:innodb_buffer_pool_size] %>
 innodb_additional_mem_pool_size = <%= node[:db_mysql][:tunable][:innodb_additional_mem_pool_size] %>
-innodb_log_file_size = <%= @innodb_log_file_size %>
+#Commented by PC  innodb_log_file_size = <%= @innodb_log_file_size %>
 innodb_log_buffer_size = <%= node[:db_mysql][:tunable][:innodb_log_buffer_size] %>
 innodb_flush_log_at_trx_commit = 2
 innodb_lock_wait_timeout = 50
